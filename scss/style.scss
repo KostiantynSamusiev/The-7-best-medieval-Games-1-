@@ -1,0 +1,929 @@
+$discriptionFont: "Almendra-Regular",
+sans-serif;
+$wrapMargin: 0 auto;
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+@mixin h1Style {
+    margin-top: 126px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #E2E2DC;
+    margin-bottom: 15px;
+}
+
+@mixin h1StyleTablet {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+@mixin h1StyleWeb {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+
+@mixin title {
+    font-family: 'Girassol-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+@mixin titleTablet {
+    font-family: 'Girassol-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+}
+
+@mixin titleWeb {
+    font-family: 'Girassol-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    color: #3D3A3A;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+@mixin footeTitle {
+    font-family: 'Girassol-Regular';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #3F4537;
+}
+
+@mixin footeTitleTablet {
+    font-family: 'Open-Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+@mixin footeTitleWeb {
+    font-family: 'Open-Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+
+@mixin linksStyle {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    text-transform: lowercase;
+    color: #515151;
+    text-decoration: none;
+    display: block;
+}
+
+@mixin linksStyleTablet {
+    font-family: 'Open-Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+@mixin discriptionStyle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 25px;
+    color: #E2E2DC;
+}
+
+@mixin discriptionStyleTablet {
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: black;
+}
+
+@mixin discriptionStyleWeb {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+@mixin btn {
+    background: url("../img/btn.png") 50% / cover no-repeat;
+    border: none;
+    height: 60px;
+    font-family: $discriptionFont;
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Girassol-Regular", sans-serif;
+    background: url('../img/BACKGROUND.png');
+}
+
+header {
+    margin-bottom: 97px;
+}
+
+
+
+.wraper {
+    padding: 0 16px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding: 16px 0 16px 0;
+
+    .web-links {
+        display: none;
+    }
+
+    .logo {
+        width: 33%;
+    }
+
+    .header-push {
+        text-transform: uppercase;
+        text-align: center;
+        width: 33%;
+        display: none;
+    }
+
+    .burger {
+        position: relative;
+        width: 33%;
+
+    }
+
+    .burger:before {
+        position: absolute;
+        right: 20%;
+        font-family: "FontAwesome", "Font Awesome 5 Brands", "Font Awesome 6 Free";
+        content: "\f7a4";
+        font-size: 30px;
+    }
+
+
+
+
+}
+
+
+
+.navigation-links {
+    display: none;
+
+    a {
+        @include linksStyle();
+        padding: 15px 5px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.is-active {
+    display: block;
+}
+
+
+
+.main_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/main-infro-background.svg) 50% 0% no-repeat;
+    background-size: 90%;
+    height: 700px;
+
+    h1 {
+        @include h1Style();
+        margin: 255px auto 20px auto;
+        z-index: 2;
+
+    }
+
+    h3 {
+        width: 80%;
+        z-index: 2;
+    }
+
+    .link-btn {
+        display: block;
+        background: url('../img/link-btn-top.svg') no-repeat;
+        font-family: 'Almendra-Regular';
+        color: black;
+        text-decoration: unset;
+        text-transform: uppercase;
+        padding: 22px 60px 22px 60px;
+        margin-bottom: 60px;
+        z-index: 2;
+    }
+
+    .web-background {
+        display: none;
+    }
+}
+
+.main_info::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+    width: 219px;
+    height: 100%;
+    z-index: 1;
+    right: 0;
+    background: url(../img/Frame1.svg) no-repeat;
+}
+
+.main_info::after {
+    transform: rotate(180deg);
+    left: 0;
+    position: absolute;
+    content: "";
+    top: -100px;
+    width: 180px;
+    height: 100%;
+    z-index: 1;
+    /* right: 0; */
+    background: url(../img/Frame1.svg) no-repeat;
+}
+
+
+h3 {
+    font-family: $discriptionFont;
+    @include discriptionStyle();
+}
+
+button {
+    @include btn;
+    margin-bottom: 249px;
+}
+
+button:hover {
+    background: #797979;
+    transition-duration: 0.2s;
+}
+
+
+
+
+.medevial-games {
+    h3 {
+        @include title();
+    }
+}
+
+
+.game-card-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+    .game_card {
+        background: url('../img/card.svg') no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        font-family: $discriptionFont;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        margin: 0 auto;
+
+        .card_number {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+
+        .card_picture {
+            width: 70%;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-self: center;
+        }
+
+        .card_bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 15px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .game_card:nth-child(2),
+    .game_card:nth-child(5) {
+        display: flex;
+        justify-content: center;
+        background: unset;
+    }
+}
+
+.DeusLoVult-games {
+    h2 {
+        @include title();
+
+    }
+}
+
+.game-about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 160px;
+    background: url('../img/Group-background.png') no-repeat;
+    background-size: 100%;
+    height: 1061px;
+    align-items: center;
+
+    h3 {
+        margin-top: 85px;
+        @include title();
+        color: #BFBDAC;
+    }
+
+    img,
+    p,
+    h3 {
+        width: 70%;
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-family: 'Almendra-Regular';
+        @include discriptionStyle();
+    }
+
+}
+
+.recomended {
+    h3 {
+        @include title();
+        width: 75%;
+    }
+
+    .games_card_container {
+        margin-bottom: 160px;
+        padding: 0 0 0 10px;
+
+        .game_card {
+            background: url('../img/card-frame.svg');
+            display: flex;
+            flex-direction: column;
+            width: 164px;
+            font-family: $discriptionFont;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+            margin: 15px 8px 0;
+            width: 165px;
+
+            .card_number {
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+
+            .card_picture {
+                padding-left: 20px;
+                padding-right: 20px;
+                align-self: center;
+                margin-bottom: 14px;
+            }
+
+            .card_bottom {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0 15px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .game_card:hover {
+            background: rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+        }
+
+        .slick-next {
+            right: 30px;
+        }
+
+        .slick-next::before,
+        .slick-prev::before {
+            background: url('../img/arrow-slider.png') 50% no-repeat;
+            background-size: 30px;
+            color: unset;
+            font-size: 30px;
+        }
+
+        .slick-prev {
+            transform: rotate(-180deg);
+            left: 30px;
+        }
+
+        .slick-next,
+        .slick-prev {
+            top: unset;
+            bottom: -300px;
+        }
+    }
+}
+
+.footer {
+    padding-top: 70px;
+    background-color: white;
+
+    h3 {
+        @include footeTitle();
+    }
+
+    .link-btn {
+        display: block;
+        background: url('../img/link-btn.svg') no-repeat;
+        font-family: 'Almendra-Regular';
+        color: white;
+        text-decoration: unset;
+        text-transform: uppercase;
+        padding: 22px 60px 22px 60px;
+        margin-bottom: 60px;
+    }
+
+
+
+    .info-container,
+    .social-media-contacts {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #000000;
+
+        .info-box,
+        .social-mdeia,
+        .contacts {
+
+            width: 50%;
+            margin-bottom: 35px;
+
+            h3 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 170%;
+                margin-bottom: 15px;
+                color: black;
+            }
+
+            a {
+                @include linksStyle();
+            }
+        }
+
+        .info-box:nth-last-child(1) {
+            a {
+                font-family: 'Open-Sans';
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 100%;
+                color: black;
+                text-transform: uppercase;
+                color: #000000;
+                padding: 11px 0 20px 0;
+
+            }
+        }
+    }
+
+    .about-website {
+        h3 {
+            @include footeTitle();
+            text-transform: unset;
+            margin-bottom: 15px;
+        }
+
+        p,
+        a {
+            font-family: 'Open-Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 120%;
+            color: #000000;
+            padding: 25px 0 25px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+    }
+}
+
+@media (min-width: 767px) {
+
+    .wraper {
+        padding: 0 36px;
+
+    }
+
+    .navigation {
+        align-items: center;
+        padding: 10px 25px 10px 25px;
+
+        .header-push {
+            font-family: 'Open-Sans';
+            display: block;
+        }
+
+        .burger {
+            top: -10px;
+        }
+    }
+
+    .main_info {
+        height: 967px;
+        margin-bottom: 263px;
+
+        h1 {
+            margin: 400px auto 25px auto;
+        }
+
+        h3 {
+            @include discriptionStyleTablet();
+            color: #E2E2DC;
+            width: 50%;
+        }
+    }
+
+    .main_info:before {
+        transform: scale(1.8);
+        top: 431px;
+        width: 255px;
+        right: 105px;
+    }
+
+    .main_info::after {
+        transform: scale(1.8) rotate(180deg);
+        left: 68px;
+        top: -280px;
+        width: 236px;
+    }
+
+    .medevial-games {
+        h3 {
+            @include titleTablet();
+        }
+    }
+
+    .DeusLoVult-games {
+        @include titleTablet();
+    }
+
+    .game-card-container {
+        .game_card {
+            height: 381px;
+            background-size: cover;
+
+            .card_number,
+            .card_bottom {
+                font-size: 20px;
+            }
+
+            .card_number {
+                margin-left: 25px;
+            }
+
+            .card_bottom {
+                margin: 0 25px;
+            }
+        }
+
+
+
+
+        img {
+            width: 335px;
+        }
+    }
+
+    .recomended {
+        h3 {
+            @include titleTablet();
+        }
+
+        .games_card_container {
+            .game_card {
+                height: 457px;
+                width: unset;
+                justify-content: space-between;
+
+                .card_number,
+                .card_bottom {
+                    font-size: 20px;
+                }
+
+                .card_number {
+                    margin-top: 33px;
+                    margin-left: 25px;
+                }
+
+                .card_bottom {
+                    margin: 0 25px 34px 25px;
+                }
+            }
+
+
+        }
+    }
+
+
+
+    .footer {
+        padding-top: 100px;
+
+        h3 {
+            font-size: 50px;
+            width: 47%;
+            margin-bottom: 36px;
+        }
+
+        .link-btn {
+
+            margin-bottom: 100px;
+
+        }
+
+        .info-container {
+            .info-box {
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 170%;
+                }
+            }
+        }
+
+        .about-website {
+
+            p,
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 170%;
+                width: 50%;
+            }
+
+        }
+
+    }
+
+}
+
+@media (min-width: 1079px) {
+
+    .wraper {
+        padding: 0 100px;
+    }
+
+    .navigation {
+        padding: 35px 100px 35px 100px;
+
+        .web-links {
+            display: block;
+            width: 33%;
+
+            ul {
+                display: flex;
+
+                a {
+                    font-family: "Open-Sans", sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    padding: 0 16px 0 16px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    text-decoration: unset;
+                    color: black;
+                }
+            }
+
+        }
+
+        .logo {
+            width: unset;
+        }
+
+        .header-push {
+            text-align: end;
+        }
+
+        .burger {
+            display: none;
+        }
+
+
+    }
+
+    .main_info {
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+
+        h1 {
+            text-align: center;
+            width: 100%;
+            font-size: 104px;
+        }
+
+        h3 {
+            width: 370px;
+            padding: 0 20px 0 20px;
+            margin: 0 40px 0 0;
+        }
+
+        background: url('../img/background-web.svg') 50% 0% no-repeat;
+
+        .web-background {
+            position: absolute;
+            display: block;
+            top: -5%;
+            max-width: 1600px;
+
+            img {
+                margin: 0 auto;
+                display: block;
+                max-width: 90%;
+            }
+        }
+    }
+
+    .main_info::before,
+    .main_info::after {
+        display: none;
+    }
+
+    .medevial-games {
+        .game_card {
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+
+            .card_number,
+            .card_bottom {
+                font-size: 20px;
+            }
+
+            .card_number {
+                margin-left: 25px;
+            }
+
+            .card_bottom {
+                margin: 25px 50px 25px 50px;
+
+            }
+
+
+
+        }
+
+        .game-card-container {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "game-card-1 game-card-1 game-card-2 game-card-3"
+                "game-card-1 game-card-1 . game-card-4";
+
+
+        }
+
+        .game-card-2 {
+            grid-area: game-card-2;
+        }
+
+        .game-card-1 {
+            grid-area: game-card-1;
+            height: auto;
+
+            img {
+                width: 470px;
+            }
+        }
+
+        .game-card-3 {
+            grid-area: game-card-3;
+        }
+
+        .game-card-4 {
+            grid-area: game-card-4;
+        }
+
+        .game-card-empty:nth-child(2) {
+            display: none;
+        }
+
+    }
+
+
+    .recomended {
+        .games_card_container {
+            .game_card {
+                width: 335px;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 80px;
+
+
+        .left-part,
+        .right-part {
+            width: 50%;
+            border-bottom: 1px black solid;
+        }
+
+        .right-part {
+            .info-container {
+                border-bottom: none;
+
+                .info-box {
+                    width: 33%;
+                }
+
+                .info-box:last-child {
+                    display: none;
+
+                }
+            }
+
+
+        }
+
+
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .wraper {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+
+}
