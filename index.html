@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/all.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>THE 7 best medieval Games</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,8 +22,6 @@
   </head>
   <body>
     <header>
-
-      
       <div class="navigation wraper">
         <div class="web-links">
           <ul>
@@ -34,12 +33,23 @@
         <div class="logo">
           <img src="img/logo.svg" alt="" />
         </div>
+        <div class="header-push">Go to the best gam shop
 
-        
-
-        <div class="header-push">Go to the best gam shop</div>
+        </div>
         <div class="burger">
-         
+          <div class="main-app">
+            <div class="btn-cont">
+              <div class="main-btn">
+                <div class="custom-menu-toggle openMenu">
+
+                </div>
+              </div>
+              <div class="side-btns">
+                <div class="side-btn">
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
 
         </div>
@@ -73,7 +83,7 @@
       <div class="game-card-container">
 
 
-        <div class="game_card game-card-1">
+        <div class="game_card game-card-1" id="card-a">
           <div class="card_number">01</div>
           <div class="card_picture">
             <img src="img/picture_game.png" alt="" />
@@ -82,6 +92,9 @@
             <div div class="game_name">Deus lo Vult</div>
             <div class="game_price">$69.99</div>
           </div>
+          <div class="content">
+            <p>learn <br> more</p>
+      </div>
         </div>
 
         <div class="game_card game-card-empty">
@@ -95,7 +108,7 @@
           </div>
         </div>
   
-        <div class="game_card game-card-2">
+        <div class="game_card game-card-2" id="card-b">
           <div class="card_number">02</div>
           <div class="card_picture">
             <img src="img/picture_game2.png" alt="" />
@@ -104,9 +117,12 @@
             <div div class="game_name">A Feasc for Odin</div>
             <div class="game_price">$69.99</div>
           </div>
+          <div class="content">
+            <p>learn <br> more</p>
+      </div>
         </div>
 
-        <div class="game_card game-card-3">
+        <div class="game_card game-card-3" id="card-c">
           <div class="card_number">03</div>
           <div class="card_picture">
             <img src="img/picture_game3.png" alt="" />
@@ -115,6 +131,9 @@
             <div div class="game_name">Marco Polo</div>
             <div class="game_price">$69.99</div>
           </div>
+          <div class="content">
+            <p>learn <br> more</p>
+      </div>
         </div>
 
        
@@ -130,7 +149,7 @@
           </div>
         </div>
 
-        <div class="game_card game-card-4">
+        <div class="game_card game-card-4" id="card-d">
           <div class="card_number">04</div>
           <div class="card_picture">
             <img src="img/picture_game4.png" alt="" />
@@ -139,61 +158,254 @@
             <div div class="game_name">Orleans</div>
             <div class="game_price">$69.99</div>
           </div>
+          <div class="content">
+            <p>learn <br> more</p>
+      </div>
         </div>
 
       </div>
     </div>
-    
     <div class="DeusLoVult-games wraper">
-      <h2>Deus lo Vult</h2>
-    </div>
-<!-- 
-    <div class="game-about wraper">
-      <h3>Deus lo Vult</h3>
-      <img src="img/icon.svg" alt="">
-      <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries.</p>
-    </div>
- -->
+      <div class="game-buttons">
+        <button class="btn active" id="a">DeusLoVult</button>
+        <button class="btn" id="b">A Feasc for Odin</button>
+        <button class="btn" id="c">Marco Polo</button>
+        <button class="btn" id="d">Orleans</button>
+      </div>   
 
+    <div id="parent">
+
+
+       <div class="box a">   
+      <div class="container"  >
+        <div class="left-part" >
+          <div class="gallery clearfix">
+            <div class="pics clearfix">
+            <div class="thumbs">
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            </div>
+            <a href="img/game-pic-gallery.png" class="full"> 
+            <img src="img/game-pic-gallery.png"> </a> </div>
+            </div>
+
+            <div class="game_rules">
+              <div>2-4 players</div>
+              <div>30-120 min</div>
+              <div>Age: 14+</div>
+             
+            </div>
+          
+        </div>
+        <class class="right-part">
+          <h2>Deus lo Vult</h2>
+  
+          <div class="about-game">
+            <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries, the game draws heavily on the military games played by the medieval aristocracy all over the world: shogi, xiangqi, chaturanga, and backgammon.</p>
+            <p>You control an army of crusaders trying to loot as much treasure from the Holy Land as possible. At the same time, you hinder the progress of other players using the mutually shared army of the Saracens.</p>
+             <p>
+              God is watching the Crusades closely and often intervenes with Divine Will events that you may use to your advantage. But don’t forget to maintain your camp’s amenities, or when the moment comes, your troops may be too busy fighting diarrhea.</p>
+             </div>
+                   <a href="" class="link-btn" >go to the shop</a> 
+        </class>
+  
+       
+      </div>
+  
+     </div>
+      <div class="box b">   
+      <div class="container"  >
+        <div class="left-part" >
+          <div class="gallery clearfix">
+            <div class="pics clearfix">
+            <div class="thumbs">
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            </div>
+            <a href="img/game-pic-gallery.png" class="full" title="Title 1"> 
+            <img src="img/game-pic-gallery.png"> </a> </div>
+            </div>
+            <div class="game_rules">
+            
+              <div>2-4 players</div>
+              <div>30-120 min</div>
+              <div>Age: 14+</div>
+             
+            </div>
+          
+        </div>
+        <class class="right-part">
+          <h2>Deus lo Vult</h2>
+  
+          <div class="about-game">
+            <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries, the game draws heavily on the military games played by the medieval aristocracy all over the world: shogi, xiangqi, chaturanga, and backgammon.</p>
+            <p>You control an army of crusaders trying to loot as much treasure from the Holy Land as possible. At the same time, you hinder the progress of other players using the mutually shared army of the Saracens.</p>
+             <p>
+              God is watching the Crusades closely and often intervenes with Divine Will events that you may use to your advantage. But don’t forget to maintain your camp’s amenities, or when the moment comes, your troops may be too busy fighting diarrhea.</p>
+             </div>
+                   <a href="" class="link-btn" >go to the shop</a> 
+        </class>
+  
+       
+      </div>
+  
+     </div>
+     <div class="box c">   
+      <div class="container"  >
+        <div class="left-part" >
+          <div class="gallery clearfix">
+            <div class="pics clearfix">
+            <div class="thumbs">
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            </div>
+            <a href="img/game-pic-gallery.png" class="full" title="Title 1"> 
+            <img src="img/game-pic-gallery.png"> </a> </div>
+            </div>
+            <div class="game_rules">
+            
+              <div>2-4 players</div>
+              <div>30-120 min</div>
+              <div>Age: 14+</div>
+             
+            </div>
+          
+        </div>
+        <class class="right-part">
+          <h2>Deus lo Vult</h2>
+  
+          <div class="about-game">
+            <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries, the game draws heavily on the military games played by the medieval aristocracy all over the world: shogi, xiangqi, chaturanga, and backgammon.</p>
+            <p>You control an army of crusaders trying to loot as much treasure from the Holy Land as possible. At the same time, you hinder the progress of other players using the mutually shared army of the Saracens.</p>
+             <p>
+              God is watching the Crusades closely and often intervenes with Divine Will events that you may use to your advantage. But don’t forget to maintain your camp’s amenities, or when the moment comes, your troops may be too busy fighting diarrhea.</p>
+             </div>
+                   <a href="" class="link-btn" >go to the shop</a> 
+        </class>
+  
+       
+      </div>
+  
+     </div>
+     <div class="box d">   
+      <div class="container"  >
+        <div class="left-part" >
+          <div class="gallery clearfix">
+            <div class="pics clearfix">
+            <div class="thumbs">
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            <div class="preview"> <a href="#" class="selected" data-full="img/game-pic-gallery.png" data-title=""> <img src="img/game-pic-gallery.png"/> </a> </div>
+            </div>
+            <a href="img/game-pic-gallery.png" class="full" title="Title 1"> 
+            <img src="img/game-pic-gallery.png"> </a> </div>
+            </div>
+            <div class="game_rules">
+            
+              <div>2-4 players</div>
+              <div>30-120 min</div>
+              <div>Age: 14+</div>
+             
+            </div>
+          
+        </div>
+        <class class="right-part">
+          <h2>Deus lo Vult</h2>
+  
+          <div class="about-game">
+            <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries, the game draws heavily on the military games played by the medieval aristocracy all over the world: shogi, xiangqi, chaturanga, and backgammon.</p>
+            <p>You control an army of crusaders trying to loot as much treasure from the Holy Land as possible. At the same time, you hinder the progress of other players using the mutually shared army of the Saracens.</p>
+             <p>
+              God is watching the Crusades closely and often intervenes with Divine Will events that you may use to your advantage. But don’t forget to maintain your camp’s amenities, or when the moment comes, your troops may be too busy fighting diarrhea.</p>
+             </div>
+                   <a href="" class="link-btn" >go to the shop</a> 
+        </class>
+  
+       
+      </div>
+  
+     </div>
+
+    </div>
+    </div>
+
+    <div class="game-about">
+      <div class="right-part">
+        <h3>Deus lo Vult</h3>
+        <div class="decorate"></div>
+        <img src="img/icon.svg" alt="">
+        <p>Deus lo Vult is a board game for two to four treacherous and greedy marauders and murderers. Based on opulent European manuscripts of the 12th to 15th centuries.</p>
+      </div>
+      <div class="left-part">
+        <div class="logo">
+          <img src="img/logo-circle.svg" alt="">
+        </div>
+
+        <div class="pic-1">
+          <img src="img/block-pic1.png" alt="">
+        </div>
+        <div class="pic-2">
+          <img src="img/block-pic2.png" alt="">
+        </div>
+        
+      </div>
+      
+    </div>
     <div class="recomended wraper">
       <h3>recomended</h3>
 
       <div class="games_card_container">
-        <div class="game_card">
-          <div class="card_number">01</div>
-          <div class="card_picture">
-            <img src="img/picture_game.png" alt="" />
+        <a href="">
+          <div class="link_card ">
+            <div class="card_number">01</div>
+            <div class="card_picture">
+              <img src="img/picture_game.png" alt="" />
+            </div>
+            <div class="card_bottom">
+              <div div class="game_name">Deus lo Vult</div>
+              <div class="game_price">$69.99</div>
+            </div>
           </div>
-          <div class="card_bottom">
-            <div div class="game_name">Deus lo Vult</div>
-            <div class="game_price">$69.99</div>
+        </a>
+
+        <a href="">
+          <div class="link_card ">
+            <div class="card_number">01</div>
+            <div class="card_picture">
+              <img src="img/picture_game.png" alt="" />
+            </div>
+            <div class="card_bottom">
+              <div div class="game_name">Deus lo Vult</div>
+              <div class="game_price">$69.99</div>
+            </div>
           </div>
-        </div>
+        </a>
+        
+        <a href="">
+          <div class="link_card ">
+            <div class="card_number">01</div>
+            <div class="card_picture">
+              <img src="img/picture_game.png" alt="" />
+            </div>
+            <div class="card_bottom">
+              <div div class="game_name">Deus lo Vult</div>
+              <div class="game_price">$69.99</div>
+            </div>
+          </div>
+        </a>
   
-        <div class="game_card">
-          <div class="card_number">01</div>
-          <div class="card_picture">
-            <img src="img/picture_game.png" alt="" />
-          </div>
-          <div class="card_bottom">
-            <div div class="game_name">Deus lo Vult</div>
-            <div class="game_price">$69.99</div>
-          </div>
-        </div>
+      
   
-        <div class="game_card">
-          <div class="card_number">01</div>
-          <div class="card_picture">
-            <img src="img/picture_game.png" alt="" />
-          </div>
-          <div class="card_bottom">
-            <div div class="game_name">Deus lo Vult</div>
-            <div class="game_price">$69.99</div>
-          </div>
-        </div>
+
       </div>
     </div>
-
     <div class="footer wraper">
       <div class="left-part">
         <h3>Start your way 
@@ -249,18 +461,33 @@
         </div>
       </div>
 
-      
-      <div class="about-website">
-        <p>© 2020 <a href="#">Tip-Top tabletop</a>. Games are property of their respective owners.</p>
+      <div class="navigation-container">
+        <div class="about-website">
+          <p>© 2020 <a href="#">Tip-Top tabletop</a>. Games are property of their respective owners.</p>
+        </div>
+        <div class="footer-navigation-links">
+          <ul><li>
+            <a href="">Instagram</a>
+          </li>
+        <li><a href="">Facebook</a>
+          </li>
+        <li>
+          <a href="">Telegram</a></li>
+        </ul>
+        </div>
       </div>
-    </div>
+
     
+    </div>
 
       <!-- add JQuery-->
       <script src="libs/jquery.main.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+      <script src="fancybox/jquery.fancybox.js"></script>
       <!-- add slider Slick-->
       <script src="libs/slick/slick.min.js"></script>
-    <!-- add JSscript-->
+      <script src="js/gallery.js"></script>
+      <!-- add JSscript-->
     <script src="js/main.js"></script>
   </body>
 </html>
